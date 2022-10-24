@@ -10,9 +10,8 @@ object1 = st.container()
 object2 = st.container()
 object3 = st.container()
 #data
-#df = pd.read_excel('2023 Analytics Internship Problem Dataset.xlsx')
-#df = df[df.PITCHER_KEY == "A" | df.PITCHER_KEY == "B"]
-df = pd.read_excel('Reds_data.xlsx')
+df = pd.read_excel('2023 Analytics Internship Problem Dataset.xlsx')
+df = df[(df.PITCHER_KEY == "A") | (df.PITCHER_KEY == "B")]
 pitcherA = df[df.PITCHER_KEY == "A"]
 pitcherB = df[df.PITCHER_KEY == "B"]
 
